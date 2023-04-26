@@ -1,5 +1,6 @@
 # Use an official Python runtime as a parent image
 FROM python:3.9
+FROM ssayin2s/myapp:v1.0
 
 # Set the working directory to /app
 WORKDIR /app
