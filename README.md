@@ -1,2 +1,2 @@
 # OPENAPI Tasarımı
-#Açık Kaynak Kodlu Yazılımlar OpenAPI tasarımı ödevi
+Açık Kaynak Kodlu Yazılımlar OpenAPI tasarımı ödevi
