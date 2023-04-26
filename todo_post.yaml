@@ -1,0 +1,41 @@
+swagger: '2.0'
+info:
+  title: 'TodoSimple API'
+  description: 'A simple API for managing TODO tasks'
+  version: '1.0.0'
+consumes:
+- 'application/json'
+produces:
+- 'application/json'
+paths:
+  /{todo_id}:
+    post:
+      tags:
+      - 'todo'
+      summary: 'Add a new TODO task'
+      description: 'This endpoint allows you to add a new TODO task.'
+      parameters:
+      - in: 'path'
+        name: 'todo_id'
+        description: 'The ID of the TODO task'
+        required: true
+        type: 'string'
+      - in: 'body'
+        name: 'body'
+        description: 'The data for the new TODO task'
+        required: true
+        schema:
+          type: 'object'
+          properties:
+            data:
+              type: 'string'
+              example: 'Buy groceries'
+      responses:
+        '200':
+          description: 'Successful response'
+          schema:
+            type: 'object'
+            properties:
+              todo_id:
+                type: 'string'
+                example: 'Buy groceries'
